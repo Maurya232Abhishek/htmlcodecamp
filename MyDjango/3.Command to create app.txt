@@ -1,0 +1,26 @@
+1.Create an app called quiz:
+	cmd:
+	python manage.py startapp quiz
+2.Create a class in quiz.models.py
+	from django.db import models
+
+	# Create your models here.
+
+	class QuizModel(models.Model):
+
+	   question = models.CharField(max_length = 300)
+	   opta = models.CharField(max_length = 50)
+	   optb = models.CharField(max_length = 50)
+	   optc = models.CharField(max_length = 50)
+	   optd = models.CharField(max_length = 50)
+	   correctanswer = models.IntegerField()
+
+
+	   class Meta:
+	      db_table = "questions"
+3. Enter the app name in setting.py in INSTALLED_APPS list
+4.Migration:
+	cmd:
+		python manage.py makemigrations
+		python manage.py migrate
+

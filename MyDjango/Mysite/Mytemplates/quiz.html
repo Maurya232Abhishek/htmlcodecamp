@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz Test</title>
+<style>
+	.r
+	{
+	border-style:solid;
+	border-color:gray;
+	border-width:10px;
+	margin-left:20%;
+	margin-top:2%;
+	padding:20px;
+	background-color:orange;
+	width:800px;
+	display:flex;
+	flex-direction:row;	
+	flex:1 1;
+	justify-content:center;
+	align-items:center;
+	
+	}
+	.i
+	{
+	width:300px;
+	height:25px;
+	}
+	
+	
+</style>
+</head>
+<body bgcolor="teal" text="white">
+{{data}}
+<form>
+
+<div class="r" align="center">
+<p><h1>Qno.{{data.queno.}}> {{data.que}}</p>
+<div><input type="radio" name="ans" value="{{data.opta}}"> {{data.opta}} </div>
+<div><input type="radio" name="ans" value="{{data.optb}}"> {{data.optb}}</div> <br>
+<div><input type="radio" name="ans" value="{{data.optc}}"> {{data.optc}} </div>
+<div><input type="radio" name="ans" value="{{data.optd}}"> {{data.optd}} </div><br>
+
+<!--<input class="i" type="submit"><br>-->
+<input class="i" type="submit" name="cmd" value="Previous">
+<input class="i" type="submit" name="cmd" value="Next">
+qno.<input type="text" name="qno" value="{{data.qno}}"><br>
+score:<input type="text" name="score" value="{{data.score}}">
+
+
+</h1>
+</div>
+</form>
+</body>
+</html>

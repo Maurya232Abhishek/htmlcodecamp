@@ -1,0 +1,14 @@
+step1:Creating virtual environment
+python -m venv venv
+
+Step2:Activating Virtual Environment
+venv\Scripts\activate
+
+Step3:Installing Django
+pip install django
+
+Step 4: Creating New project:
+django-admin startproject mysite
+
+Step 5: Running server
+mysite\ python manage.py runserver 777

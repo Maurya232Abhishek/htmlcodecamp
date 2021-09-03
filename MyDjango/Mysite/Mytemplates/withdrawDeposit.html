@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WithdrawDeposit</title>
+</head>
+<body>
+{{data}}
+<form>
+<input type="text" name="accno" placeholder="Account Number" value="{{data.accno}}"><br>
+<input type="text" name="amount" placeholder="Amount" value="{{data.amount}}" >
+<input type="submit" name="cmd" value="Withdraw">
+<input type="submit" name="cmd" value="Deposit">
+
+</form>
+Rupees {{data.amount}} 
+{{data.result}} Successfully
+</body>
+</html>

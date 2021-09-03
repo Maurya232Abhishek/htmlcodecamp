@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculator</title>
+<style>
+	.calc{
+	background-color:orange;
+	max-width:500px;
+	
+	margin-top:100px;
+	margin-left:25%;
+	padding:20px;
+	
+	
+	}
+	.r
+	{
+	height:15px;
+	margin:4px;
+	
+	
+	
+	}
+
+</style>
+</head>
+<body bgcolor="teal" text="white">
+<div class="calc"  align="center">
+<form>
+	a:<input type="text" class="r" placeholder="Number1" name="a" value="{{data.a}}" >
+	b:<input  type="text" class="r" placeholder="Number2" name="b" value="{{data.b}}" ><br>
+	Ans:<input type="text" class="r" placeholder="Answer" name="ans" value="{{data.ans}}">
+	<br>	
+	<input type="radio" name="cmd" value="add"> Add <input type='radio' name="cmd" value="sub">Subtract<input  type="radio" name="cmd" value="mul">Multiply <input type="radio" name="cmd" value="div">Divide
+	<br><button type="submit">  Go  </button>
+</form	>
+	
+</div>
+
+</body>
+</html>

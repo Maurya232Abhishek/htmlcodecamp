@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CRUD database</title>
+<style>
+	.a{
+	padding:20px;
+	background-color:orange;
+	margin-top:100px;
+	margin-left:20%;
+	margin-right:20%;
+	
+	min-height:400px;
+	min-width:600px;
+	
+	}
+	.r
+	{
+	height:15px;
+	margin:4px;
+	
+	}
+</style>
+</head>
+<body bgcolor="teal" >
+{{data}}
+<form>
+
+<div class="a" align="center">
+<input class="r" type="text" name="bid" placeholder="Bookid" value="{{data.bid}}" >
+<input class="r" type="text" name="name" placeholder="Bookname" value="{{data.name}}" >
+<input class="r" type="text" name="author" placeholder="Author Name" value="{{data.author}}" >
+<input class="r" type="number" name="price" placeholder="Book Price" value="{{data.price}}" >
+<br>
+<input type="submit" name="cmd" value="Insert">
+<input type="submit" name="cmd" value="Update">
+<input type="submit" name="cmd" value="Delete">
+<input type ="submit" name="cmd" value="Search">
+<br>
+{{data.result}}
+</div>
+</form>
+
+</body>
+</html>
